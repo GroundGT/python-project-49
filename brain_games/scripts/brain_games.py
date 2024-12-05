@@ -13,7 +13,7 @@ def welcome_user() -> str:
 
 def main():
     greet()
-    print(welcome_user())  # Уточнить как правильно
+    print(welcome_user())
 
 
 if __name__ == '__main__':
