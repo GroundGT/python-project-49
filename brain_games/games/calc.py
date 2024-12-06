@@ -12,7 +12,6 @@ def calculate_two_numbers():
     action = choice(LIST_OF_OPERATIONS)
     first_number = randint(BEGINNING, END)
     second_number = randint(BEGINNING, END)
-    print(first_number, second_number, action)
 
     match action:
         case '+':

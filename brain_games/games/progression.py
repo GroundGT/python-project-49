@@ -13,10 +13,10 @@ def get_progression() -> list:
     step = randint(BEGINNING, END)
     size_progression = randint(MIN_SIZE, MAX_SIZE)
     progression_list = [first_element]
-    print(first_element, step, size_progression)
+
     for i in range(size_progression - 1):
         progression_list.append(progression_list[i] + step)
-    print(progression_list)
+
     return progression_list
 
 
