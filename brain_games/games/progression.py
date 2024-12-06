@@ -6,7 +6,7 @@ END = 100
 MIN_SIZE = 5
 MAX_SIZE = 10
 START_INDEX = 0
-QUESTION_PROGRESSION = 'What number is missing in the progression?'
+DESCRIPTION_PROGRESSION = 'What number is missing in the progression?'
 
 def get_progression() -> list:
     first_element = randint(BEGINNING, END)
@@ -27,7 +27,7 @@ def get_task_for_progression():
     answer = str(progression[index_for_task])
     progression[index_for_task] = '..'
     question = (" ".join(map(str, progression)))
-    return question, answer
+    return question, str(answer)
 
 
 print(get_task_for_progression())

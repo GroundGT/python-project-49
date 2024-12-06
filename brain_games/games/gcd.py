@@ -3,7 +3,7 @@ from random import randint
 
 BEGINNING = 1
 END = 50
-QUESTION_GCD = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION_GCD = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gcd():
@@ -19,7 +19,7 @@ def get_gcd():
             second_number %= first_number
 
     answer = first_number + second_number
-    return question, answer
+    return question, str(answer)
 
 
 

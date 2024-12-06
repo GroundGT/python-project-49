@@ -1,11 +1,11 @@
 import prompt
-from brain_games.scripts.brain_games import welcome_user
+from brain_games.cli import welcome_user
 
 ROUNDS = 3
 
 
 def launch_game(question_and_answer, description):
-    print(welcome_user())
+    name = welcome_user()
     for i in range(ROUNDS):
         question, answer = question_and_answer()
         player_answer = prompt.string(f'Question: {question}\nYour answer: ')
@@ -17,3 +17,5 @@ def launch_game(question_and_answer, description):
 
             return
     print(f'Congratulations, {name}!')
+
+print(launch_game())

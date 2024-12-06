@@ -3,7 +3,7 @@ from random import randint
 
 BEGINNING = 1
 END = 100
-QUESTION_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
+DESCRIPTION_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_even() -> int and str:
@@ -12,7 +12,7 @@ def generate_even() -> int and str:
         value = 'yes'
     else:
         value = 'no'
-    return number, value
+    return str(number), value
 
 print(generate_even())
 
