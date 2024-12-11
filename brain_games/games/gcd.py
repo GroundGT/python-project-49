@@ -3,10 +3,10 @@ from random import randint
 
 BEGINNING = 1
 END = 50
-DESCRIPTION_GCD = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def get_gcd():
+def generate_data():
 
     first_number = randint(BEGINNING, END)
     second_number = randint(BEGINNING, END)
@@ -24,4 +24,3 @@ def get_gcd():
 
 
 
-print(get_gcd())

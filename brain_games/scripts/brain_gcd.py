@@ -1,9 +1,9 @@
-from brain_games.games import even
+from brain_games.games import gcd
 from brain_games import core
 
 
 def main():
-    core.launch_game(even)
+    core.launch_game(gcd)
 
 
 if __name__ == '__main__':

@@ -1,13 +1,14 @@
 from random import randint, choice
+# import operator
 
 
 LIST_OF_OPERATIONS = ['+', '-', '*']
 BEGINNING = 1
 END = 100
-DESCRIPTION_CALC = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def calculate_two_numbers():
+def generate_data():
 
     action = choice(LIST_OF_OPERATIONS)
     first_number = randint(BEGINNING, END)
@@ -33,5 +34,5 @@ def calculate_two_numbers():
             return expression, str(answer)
 
 
-print(calculate_two_numbers())
+
 

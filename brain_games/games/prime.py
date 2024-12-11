@@ -3,7 +3,7 @@ from random import randint
 
 BEGINNING = 1
 END = 100
-QUESTION_PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime():
@@ -14,13 +14,13 @@ def is_prime():
         return True, random_number
 
 
-def get_answer():
+def generate_data():
     check, random_number = is_prime()
     if check:
         answer = 'yes'
     else:
         answer = 'no'
-    return str(random_number), answer
+    question = random_number
+    return str(question), answer
 
-print(get_answer())
 
