@@ -1,16 +1,16 @@
 from random import choice, randint
 
 LIST_OF_OPERATIONS = ['+', '-', '*']  # !
-BEGINNING = 1
+START = 1
 END = 100
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def generate_data() -> int and str:
+def generate_data() -> tuple[str, str]:
 
     action = choice(LIST_OF_OPERATIONS)
-    first_number = randint(BEGINNING, END)
-    second_number = randint(BEGINNING, END)
+    first_number = randint(START, END)
+    second_number = randint(START, END)
 
     match action:
 
