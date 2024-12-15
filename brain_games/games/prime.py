@@ -14,7 +14,7 @@ def is_prime() -> bool:
     return True
 
 
-def getgameinfo() -> tuple[str, str]:
+def get_gameinfo() -> tuple[str, str]:
     if is_prime():
         answer = 'yes'
     else:
