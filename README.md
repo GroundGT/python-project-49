@@ -16,7 +16,31 @@ Brain-games - текстовая игра, состоящая из 5 мини - 
 
 ## Установка:
 - создать виртуальное окружение
-- установить poetry
+- установить пакетный менеджер "uv"
 - собрать проект с помощью команды make build
 - для установки приложения из пакетов необходимо воспользоваться 
 командой make-package-install внутри рабочей директории
+
+## Записи игр:
+
+_Игра «Проверка на чётность»:_
+[Победа](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc) |
+[Поражение](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc)
+
+_Игра «Калькулятор»:_
+[Победа](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc) |
+[Поражение](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc)
+
+_Игра «НОД»:_
+[Победа](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc) |
+[Поражение](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc)
+
+_Игра «Арифметическая прогрессия»:_
+[Победа](https://asciinema.org/a/MteuIvIJP36U6VRyE0AxGNA86) |
+[Поражение](https://asciinema.org/a/MteuIvIJP36U6VRyE0AxGNA86)
+
+_Игра «Простое ли число?»:_
+[Победа](https://asciinema.org/a/hHicsqHHpc2egXEgGUBRuuT4W) |
+[Поражение](https://asciinema.org/a/9NIr0yEhemYjjBpPKlHoK8GjH)
+
+

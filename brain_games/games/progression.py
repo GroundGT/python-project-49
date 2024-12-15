@@ -1,6 +1,6 @@
 from random import randint
 
-BEGINNING = 0
+START = 0
 END = 100
 MIN_SIZE = 5
 MAX_SIZE = 10
@@ -9,8 +9,8 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 
 def get_progression() -> list[int]:
-    first_element = randint(BEGINNING, END)
-    step = randint(BEGINNING, END)
+    first_element = randint(START, END)
+    step = randint(START, END)
     size_progression = randint(MIN_SIZE, MAX_SIZE)
     progression_list = [first_element]
 
