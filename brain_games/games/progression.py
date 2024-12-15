@@ -12,19 +12,17 @@ def get_progression() -> list[int]:
     first_element = randint(START_GAP, END_GAP)
     step = randint(START_GAP, END_GAP)
     size_progression = randint(MIN_SIZE, MAX_SIZE)
-    progression_list = [first_element]
 
-    for i in range(size_progression - 1):
-        progression_list.append(progression_list[i] + step)
+    progression_list = [first_element + step * i for i in range(size_progression)]
 
     return progression_list
 
 
 def get_gameinfo() -> tuple[str, str]:
     progression = get_progression()
-    index_for_task = randint(START_INDEX, len(progression) - 1)
-    answer = str(progression[index_for_task])
-    progression[index_for_task] = '..'
+    element_for_task = randint(START_INDEX, len(progression) - 1)
+    answer = str(progression[element_for_task])
     question = (" ".join(map(str, progression)))
+    question = question.replace(answer,'..')
 
     return question, str(answer)
