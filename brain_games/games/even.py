@@ -5,8 +5,8 @@ BEGINNING = 1
 END = 100
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-
-def generate_data() -> str and int:
+#  two functions bool and generate_data
+def generate_data() -> str | int: # !
     """Данная функция проверяет на четность сгенерируемое число
     и возвращает само число и правильный ответ"""
     number = randint(BEGINNING, END)
@@ -15,4 +15,4 @@ def generate_data() -> str and int:
     else:
         answer = 'no'
     question = number
-    return str(question), answer
+    return str(question), answer  # !

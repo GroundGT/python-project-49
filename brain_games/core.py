@@ -11,17 +11,19 @@ def launch_game(game):
      если ответ неверный"""
     print('Welcome to the Brain games')
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')  # Приветствуем пользователя
-    print(game.DESCRIPTION)  # DESCRIPTION - константа, импортируемая из модуля с выбранной игрой
+    print(f'Hello, {name}')
+    print(game.DESCRIPTION)
+
     for _ in range(ROUNDS):
         question, answer = game.generate_data()
         print(f'Question: {question}')
-        player_answer = prompt.string('Your answer: ')  # Получаем ответ пользователя
-        if player_answer != answer:  # Сравниваем ответ пользователя с подготовленным ответом из функции generate_data()
+        player_answer = prompt.string('Your answer: ')
+
+        if player_answer != answer:
             print(f'"{player_answer}" is wrong answer ;(. Correct answer was "{answer}"')
-            print(f'Let`s try again, {name}!')  # Если ответ неверный - завершаем цикл, заканчиваем игру
+            print(f'Let`s try again, {name}!')
             break
         else:
-            print('Correct!')  # Если ответ верный - переходим к след. вопросу
+            print('Correct!')
     else:
-        print(f'Congratulations, {name}!')  # Если все ответы верны, поздравляем с победой, заканчиваем игру
+        print(f'Congratulations, {name}!')

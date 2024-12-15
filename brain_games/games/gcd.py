@@ -6,7 +6,7 @@ END = 50
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def generate_data() -> str and str:
+def generate_data() -> str | str:
     """Данная функция генерирует два числа, находит их общий делитель,
     после чего возвращает полученные данные"""
     first_number = randint(BEGINNING, END)

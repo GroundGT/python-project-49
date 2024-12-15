@@ -2,7 +2,7 @@ from random import randint, choice
 # from operator import add, sub, mul
 
 
-LIST_OF_OPERATIONS = ['+', '-', '*']
+LIST_OF_OPERATIONS = ['+', '-', '*']  # !
 BEGINNING = 1
 END = 100
 DESCRIPTION = 'What is the result of the expression?'
