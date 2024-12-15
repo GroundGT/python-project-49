@@ -1,7 +1,7 @@
 from random import randint
 
-START = 0
-END = 100
+START_GAP = 0
+END_GAP = 100
 MIN_SIZE = 5
 MAX_SIZE = 10
 START_INDEX = 0
@@ -9,8 +9,8 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 
 def get_progression() -> list[int]:
-    first_element = randint(START, END)
-    step = randint(START, END)
+    first_element = randint(START_GAP, END_GAP)
+    step = randint(START_GAP, END_GAP)
     size_progression = randint(MIN_SIZE, MAX_SIZE)
     progression_list = [first_element]
 
@@ -20,7 +20,7 @@ def get_progression() -> list[int]:
     return progression_list
 
 
-def generate_data() -> tuple[str, str]:
+def get_gameinfo() -> tuple[str, str]:
     progression = get_progression()
     index_for_task = randint(START_INDEX, len(progression) - 1)
     answer = str(progression[index_for_task])
@@ -28,10 +28,3 @@ def generate_data() -> tuple[str, str]:
     question = (" ".join(map(str, progression)))
 
     return question, str(answer)
-
-
-
-
-
-
-

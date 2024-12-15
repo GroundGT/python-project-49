@@ -1,10 +1,10 @@
 from random import randint
 
-START = 1
-END = 100
+START_GAP = 1
+END_GAP = 100
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-random_number = randint(START, END)
+random_number = randint(START_GAP, END_GAP)
 
 
 def is_prime() -> bool:
@@ -14,7 +14,7 @@ def is_prime() -> bool:
     return True
 
 
-def generate_data() -> tuple[str, str]:
+def getgameinfo() -> tuple[str, str]:
     if is_prime():
         answer = 'yes'
     else:

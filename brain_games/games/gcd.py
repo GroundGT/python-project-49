@@ -1,13 +1,13 @@
 from random import randint
 
-START = 1
-END = 50
+START_GAP = 1
+END_GAP = 50
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def generate_data() -> tuple[str, str]:
-    first_number = randint(START, END)
-    second_number = randint(START, END)
+def get_gameinfo() -> tuple[str, str]:
+    first_number = randint(START_GAP, END_GAP)
+    second_number = randint(START_GAP, END_GAP)
     question = f'{first_number} {second_number}'
 
     while first_number != 0 and second_number != 0:

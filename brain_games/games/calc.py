@@ -1,33 +1,23 @@
-from random import choice, randint
+import random
+from operator import add, sub, mul
 
-LIST_OF_OPERATIONS = ['+', '-', '*']  # !
-START = 1
-END = 100
+START_GAP = 1
+END_GAP = 100
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def generate_data() -> tuple[str, str]:
+def get_gameinfo() -> tuple[str, str]:
+    first_number = random.randint(START_GAP, END_GAP)
+    second_number = random.randint(START_GAP, END_GAP)
 
-    action = choice(LIST_OF_OPERATIONS)
-    first_number = randint(START, END)
-    second_number = randint(START, END)
+    operators = {
+        '+': add(first_number, second_number),
+        '-': sub(first_number, second_number),
+        '*': mul(first_number, second_number)
+    }
 
-    match action:
+    action = random.choice(list(operators.keys()))
+    question = f'{first_number} {action} {second_number}'
+    answer = operators.get(action)
 
-        case '+':
-            expression = f'{first_number} + {second_number}'
-            answer = first_number + second_number
-            return expression, str(answer)
-        case '-':
-            if first_number >= second_number:
-                expression = f'{first_number} - {second_number}'
-                answer = first_number - second_number
-                return expression, str(answer)
-            else:
-                expression = f'{second_number} - {first_number}'
-                answer = second_number - first_number
-                return expression, str(answer)
-        case '*':
-            expression = f'{second_number} * {first_number}'
-            answer = second_number * first_number
-            return expression, str(answer)
+    return question, answer

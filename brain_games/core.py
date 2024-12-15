@@ -11,7 +11,7 @@ def launch_game(game):
     print(game.DESCRIPTION)
 
     for _ in range(ROUNDS):
-        question, answer = game.generate_data()
+        question, answer = game.get_gameinfo()
         print(f'Question: {question}')
         player_answer = prompt.string('Your answer: ')
 
