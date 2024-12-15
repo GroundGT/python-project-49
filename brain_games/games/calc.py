@@ -20,4 +20,4 @@ def get_gameinfo() -> tuple[str, str]:
     question = f'{first_number} {action} {second_number}'
     answer = operators.get(action)
 
-    return question, answer
+    return question, str(answer)
