@@ -1,14 +1,11 @@
 from random import randint
 
-
 BEGINNING = 1
 END = 50
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_data() -> str | str:
-    """Данная функция генерирует два числа, находит их общий делитель,
-    после чего возвращает полученные данные"""
     first_number = randint(BEGINNING, END)
     second_number = randint(BEGINNING, END)
     question = f'{first_number} {second_number}'
