@@ -4,6 +4,18 @@ ROUNDS = 3
 
 
 def launch_game(game):
+    """Base function of the project. Its starts the game, greets the player,
+    asks questions and checks the answers with the help of result of function
+    get_gameinfo().
+
+    Parameters:
+        game: A game object that should contain the get_gameinfo() method that
+    generates questions and answers and also, constants : DESCRIPTION and
+    a number of ROUNDS
+
+    Returns:
+        str object that contains the results of user`s answers
+    """
 
     print('Welcome to the Brain games')
     name = prompt.string('May I have your name? ')

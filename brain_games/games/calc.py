@@ -7,6 +7,19 @@ DESCRIPTION = 'What is the result of the expression?'
 
 
 def get_gameinfo() -> tuple[str, str]:
+    """Generates an arithmetic expression and its result.
+
+    The function creates a random arithmetic expression with two numbers
+    and one operator (+, - or *), and also calculates its result.
+
+    Returns:
+        tuple[str, str]: A tuple of two elements:
+    - a string with an arithmetic expression
+    - a string with an answer (the result of calculating the expression)
+
+    Note:
+        Supported operators: addition (+), subtraction (-), multiplication (*).
+    """
     first_number = randint(START_GAP, END_GAP)
     second_number = randint(START_GAP, END_GAP)
 

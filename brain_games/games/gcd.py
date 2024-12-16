@@ -6,6 +6,21 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gameinfo() -> tuple[str, str]:
+    """ Generates two random numbers and finds their greatest common divisor
+    (GCD).
+
+    The function creates two random numbers in a given range and calculates
+    their NODE is using the Euclidean algorithm.
+
+    Returns:
+        tuple[str, str]: A tuple of two elements:
+    - a string with two numbers separated by a space (for example, "15 25")
+    - a string with their largest common divisor
+
+    Note:
+        The algorithm uses the method of sequential division with remainder
+    (Euclid's algorithm) to find the nodes of two numbers.
+    """
     first_number = randint(START_GAP, END_GAP)
     second_number = randint(START_GAP, END_GAP)
     question = f'{first_number} {second_number}'
