@@ -14,7 +14,7 @@ def launch_game(game):
     a number of ROUNDS
 
     Returns:
-        str object that contains the results of user`s answers
+        str objects that contain the results of user`s answers
     """
 
     print('Welcome to the Brain games')

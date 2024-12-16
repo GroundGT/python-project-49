@@ -24,19 +24,19 @@ Brain-games - текстовая игра, состоящая из 5 мини - 
 ## Записи игр:
 
 _Игра «Проверка на чётность»:_
-[Победа](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc) |
-[Поражение](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc)
+[Победа](https://asciinema.org/a/zMXySbM1XbZnwWCO1bLw538nV) |
+[Поражение](https://asciinema.org/a/8PgDIDFZGKcNjUDEPdcdcfC68)
 
 _Игра «Калькулятор»:_
-[Победа](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc) |
-[Поражение](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc)
+[Победа](https://asciinema.org/a/XzLdOaa0CWA6rpiignUkqOBBN) |
+[Поражение](https://asciinema.org/a/46jmksT95Lzp0LGRVFygvbA2X)
 
 _Игра «НОД»:_
-[Победа](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc) |
-[Поражение](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc)
+[Победа](https://asciinema.org/a/9lKg4SeZNd1weqFzlbr2XrckQ) |
+[Поражение](https://asciinema.org/a/Mt01QyXj5peB9lEGiK4rvmqgE)
 
 _Игра «Арифметическая прогрессия»:_
-[Победа](https://asciinema.org/a/MteuIvIJP36U6VRyE0AxGNA86) |
+[Победа](https://asciinema.org/a/GK7AaFFjWEgJzdESwHffo2zIc) |
 [Поражение](https://asciinema.org/a/MteuIvIJP36U6VRyE0AxGNA86)
 
 _Игра «Простое ли число?»:_
