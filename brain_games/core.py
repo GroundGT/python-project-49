@@ -28,9 +28,9 @@ def launch_game(game):
         player_answer = prompt.string('Your answer: ')
 
         if player_answer != answer:
-            print(f'"{player_answer}" is wrong answer ;(.', end='')
-            print(f'Correct answer was "{answer}"')
-            print(f"Let's try again, {name}!")
+            print(f'''"{player_answer}" is wrong answer ;(. Correct answer was "{answer}"
+            Let\'s try again, {name}!'''
+            )
             break
         else:
             print('Correct!')
