@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 START_GAP = 0
 END_GAP = 100
@@ -24,13 +24,12 @@ def get_progression() -> list[int]:
     - the size of the progression is randomly selected in the range from
     MIN_SIZE to MAX_SIZE.
     """
-    first_element = randint(START_GAP, END_GAP)
+    element_1st = randint(START_GAP, END_GAP)
     step = randint(START_GAP, END_GAP)
     size_progression = randint(MIN_SIZE, MAX_SIZE)
 
-    progression_list = [first_element + step * i for i in range(size_progression)]
 
-    return progression_list
+    return [element_1st + step * i for i in range(size_progression)]
 
 
 def make_task() -> tuple[str, str]:
@@ -46,9 +45,7 @@ def make_task() -> tuple[str, str]:
     that was replaced.
     """
     progression = get_progression()
-    element_for_task = randint(START_INDEX, len(progression) - 1)
-    answer = str(progression[element_for_task])
+    answer = str(choice(progression))
     question = (" ".join(map(str, progression)))
-    question = question.replace(answer, '..')
 
-    return question, str(answer)
+    return question.replace(answer, '..'), answer
