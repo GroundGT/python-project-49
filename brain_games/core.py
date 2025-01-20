@@ -19,8 +19,9 @@ def launch_game(game):
 
     print('Welcome to the Brain games')
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    print(game.DESCRIPTION)
+    print(f'''Hello, {name}'
+    {game.DESCRIPTION}'''
+    )
 
     for _ in range(ROUNDS):
         question, answer = game.make_task()
