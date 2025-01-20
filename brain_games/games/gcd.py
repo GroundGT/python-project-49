@@ -34,10 +34,9 @@ def get_gameinfo() -> tuple[str, str]:
 
     Returns:
         tuple[str, str]: A tuple of two elements:
-        - a string with two numbers separated by a space (for example, "15 25")
+        - a string with two numbers separated by a space
         - a string with their largest common divisor
     """
     first_number, second_number = generate_random_numbers()
-    question = f'{first_number} {second_number}'
     answer = calculate_gcd(first_number, second_number)
-    return question, str(answer)
+    return f'{first_number} {second_number}', str(answer)

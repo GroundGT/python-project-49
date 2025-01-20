@@ -7,17 +7,18 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 random_number = randint(START_GAP, END_GAP)
 
 
-def is_prime() -> bool:
-    """Returns bool value of variable 'random-number.'
+def is_prime() -> tuple[int, bool]:
+    """Generates random number and checks it`s prime status'
 
     Returns:
-        'True' if the number is prime
-        'False' if the number is not prime
+        tuple[int, bool]: A tuple of two elements: A number and it`s bool prime check
     """
+    random_number = randint(START_GAP, END_GAP)
+
     for i in range(2, int(random_number ** 0.5) + 1):
         if random_number % i == 0:
-            return False
-    return True
+            return random_number, False
+    return random_number, True
 
 
 def make_task() -> tuple[str, str]:
@@ -26,9 +27,5 @@ def make_task() -> tuple[str, str]:
     Returns:
         tuple[str, str]: A tuple with the question number and answer.
     """
-    if is_prime():
-        answer = 'yes'
-    else:
-        answer = 'no'
-    question = random_number
-    return str(question), answer
+    question, answer = is_prime()
+    return str(question), 'yes' if answer else 'no'
