@@ -24,12 +24,12 @@ def get_progression() -> list[int]:
     - the size of the progression is randomly selected in the range from
     MIN_SIZE to MAX_SIZE.
     """
-    element_1st = randint(START_GAP, END_GAP)
+    first_element = randint(START_GAP, END_GAP)
     step = randint(START_GAP, END_GAP)
     size_progression = randint(MIN_SIZE, MAX_SIZE)
 
 
-    return [element_1st + step * i for i in range(size_progression)]
+    return [first_element + step * i for i in range(size_progression)]
 
 
 def get_game_objects() -> tuple[str, str]:
