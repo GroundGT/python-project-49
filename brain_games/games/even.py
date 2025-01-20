@@ -5,24 +5,23 @@ END_GAP = 100
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def make_task() -> tuple[str, str]:
+def is_even() -> tuple[int, bool]:
     """ Generates a random number and determines its parity.
 
-    The function creates a random number in a given range and returns
-    it along with the parity answer ('yes' for even, 'no' for odd).
+    Returns:
+        tuple[int, str]: A tuple of two elements: A number and it`s bool parity check
+    """
+    number = randint(START_GAP, END_GAP)
+    return number, number % 2 == 0
+
+
+def make_task() -> tuple[str, str]:
+    """ Function uses result of is_even() function to return question and answer for player
 
     Returns:
         tuple[str, str]: A tuple of two elements:
-    - a string with a number to check
+    - a string as a question
     - a string with the answer ('yes' if the number is even, 'no' if odd)
-
-    Note:
-        An even number is considered to be divisible by 2 without remainder.
     """
-    number = randint(START_GAP, END_GAP)
-    if number % 2 == 0:
-        answer = 'yes'
-    else:
-        answer = 'no'
-    question = number
-    return str(question), answer  # !
+    number, check = is_even()
+    return str(number), 'yes' if check else 'no'
