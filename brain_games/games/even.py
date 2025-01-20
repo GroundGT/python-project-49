@@ -15,7 +15,7 @@ def is_even() -> tuple[int, bool]:
     return number, number % 2 == 0
 
 
-def make_task() -> tuple[str, str]:
+def get_game_objects() -> tuple[str, str]:
     """ Function uses result of is_even() function to return question and answer for player
 
     Returns:

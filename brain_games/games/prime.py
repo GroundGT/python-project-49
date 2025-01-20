@@ -21,7 +21,7 @@ def is_prime() -> tuple[int, bool]:
     return random_number, True
 
 
-def make_task() -> tuple[str, str]:
+def get_game_objects() -> tuple[str, str]:
     """This function get the result of function is_prime() in it`s body
 
     Returns:

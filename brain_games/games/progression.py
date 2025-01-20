@@ -32,7 +32,7 @@ def get_progression() -> list[int]:
     return [element_1st + step * i for i in range(size_progression)]
 
 
-def make_task() -> tuple[str, str]:
+def get_game_objects() -> tuple[str, str]:
     """ Generates a question and answer for the game based on the sequence.
     The function extracts a random element from the progression and forms a
     string of the question, replacing this element with '..'.

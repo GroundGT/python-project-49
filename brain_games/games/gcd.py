@@ -29,7 +29,7 @@ def calculate_gcd(a: int, b: int) -> int:
         a, b = b, a % b
     return a
 
-def get_gameinfo() -> tuple[str, str]:
+def get_game_objects() -> tuple[str, str]:
     """Generates two random numbers and finds their greatest common divisor (GCD).
 
     Returns:

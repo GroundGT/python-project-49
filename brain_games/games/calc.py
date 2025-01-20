@@ -10,7 +10,7 @@ OPERATORS = {
     '*': mul
 }
 
-def make_task() -> tuple[str, str]:
+def get_game_objects() -> tuple[str, str]:
     """Generates an arithmetic expression and its result.
 
     The function creates a random arithmetic expression with two numbers
