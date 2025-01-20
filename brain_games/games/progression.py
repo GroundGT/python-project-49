@@ -8,7 +8,7 @@ START_INDEX = 0
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def make_task() -> list[int]:
+def get_progression() -> list[int]:
     """Generates an arithmetic progression.
 
     The function randomly selects the first element of the progression,
@@ -24,16 +24,16 @@ def make_task() -> list[int]:
     - the size of the progression is randomly selected in the range from
     MIN_SIZE to MAX_SIZE.
     """
-    element_1st = randint(START_GAP, END_GAP)
+    first_element = randint(START_GAP, END_GAP)
     step = randint(START_GAP, END_GAP)
     size_progression = randint(MIN_SIZE, MAX_SIZE)
 
-    progression_list = [element_1st + step * i for i in range(size_progression)]
+    progression_list = [first_element + step * i for i in range(size_progression)]
 
     return progression_list
 
 
-def get_gameinfo() -> tuple[str, str]:
+def make_task() -> tuple[str, str]:
     """ Generates a question and answer for the game based on the sequence.
     The function extracts a random element from the progression and forms a
     string of the question, replacing this element with '..'.
