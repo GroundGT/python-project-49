@@ -20,7 +20,7 @@ def is_prime() -> bool:
     return True
 
 
-def get_gameinfo() -> tuple[str, str]:
+def make_task() -> tuple[str, str]:
     """This function get the result of function is_prime() in it`s body
 
     Returns:

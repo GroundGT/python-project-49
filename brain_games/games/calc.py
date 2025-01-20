@@ -6,7 +6,7 @@ END_GAP = 100
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def get_gameinfo() -> tuple[str, str]:
+def make_task() -> tuple[str, str]:
     """Generates an arithmetic expression and its result.
 
     The function creates a random arithmetic expression with two numbers

@@ -8,7 +8,7 @@ START_INDEX = 0
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def get_progression() -> list[int]:
+def make_task() -> list[int]:
     """Generates an arithmetic progression.
 
     The function randomly selects the first element of the progression,

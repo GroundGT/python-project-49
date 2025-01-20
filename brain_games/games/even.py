@@ -5,7 +5,7 @@ END_GAP = 100
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def get_gameinfo() -> tuple[str, str]:
+def make_task() -> tuple[str, str]:
     """ Generates a random number and determines its parity.
 
     The function creates a random number in a given range and returns

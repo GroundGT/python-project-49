@@ -5,7 +5,7 @@ END_GAP = 50
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def get_gameinfo() -> tuple[str, str]:
+def make_task() -> tuple[str, str]:
     """ Generates two random numbers and finds their greatest common divisor
     (GCD).
 
