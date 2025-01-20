@@ -4,7 +4,11 @@ from random import choice, randint
 START_GAP = 1
 END_GAP = 100
 DESCRIPTION = 'What is the result of the expression?'
-
+OPERATORS = {
+    '+': add,
+    '-': sub,
+    '*': mul
+}
 
 def make_task() -> tuple[str, str]:
     """Generates an arithmetic expression and its result.
@@ -23,14 +27,9 @@ def make_task() -> tuple[str, str]:
     first_number = randint(START_GAP, END_GAP)
     second_number = randint(START_GAP, END_GAP)
 
-    operators = {
-        '+': add(first_number, second_number),
-        '-': sub(first_number, second_number),
-        '*': mul(first_number, second_number)
-    }
 
-    action = choice(list(operators.keys()))
+    action = choice(list(OPERATORS.keys()))
     question = f'{first_number} {action} {second_number}'
-    answer = operators.get(action)
+    answer = OPERATORS[action](first_number, second_number)
 
     return question, str(answer)
