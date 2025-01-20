@@ -9,14 +9,16 @@ def is_even() -> tuple[int, bool]:
     """ Generates a random number and determines its parity.
 
     Returns:
-        tuple[int, str]: A tuple of two elements: A number and it`s bool parity check
+        tuple[int, str]: A tuple of two elements: A number and it`s bool
+    parity check
     """
     number = randint(START_GAP, END_GAP)
     return number, number % 2 == 0
 
 
 def get_game_objects() -> tuple[str, str]:
-    """ Function uses result of is_even() function to return question and answer for player
+    """ Function uses result of is_even() function to return question
+    and answer for player
 
     Returns:
         tuple[str, str]: A tuple of two elements:

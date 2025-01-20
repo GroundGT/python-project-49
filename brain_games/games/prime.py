@@ -11,7 +11,8 @@ def is_prime() -> tuple[int, bool]:
     """Generates random number and checks it`s prime status'
 
     Returns:
-        tuple[int, bool]: A tuple of two elements: A number and it`s bool prime check
+        tuple[int, bool]: A tuple of two elements: A number and it`s bool
+    prime check
     """
     random_number = randint(START_GAP, END_GAP)
 

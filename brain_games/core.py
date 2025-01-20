@@ -19,7 +19,7 @@ def launch_game(game):
 
     print('Welcome to the Brain games')
     name = prompt.string('May I have your name? ')
-    print(f'''Hello, {name}'
+    print(f'''Hello, {name}
     {game.DESCRIPTION}'''
     )
 
@@ -29,8 +29,10 @@ def launch_game(game):
         player_answer = prompt.string('Your answer: ')
 
         if player_answer != answer:
-            print(f'''"{player_answer}" is wrong answer ;(. Correct answer was "{answer}"
-            Let\'s try again, {name}!'''
+            print(
+                  f'"{player_answer}" is wrong answer'
+                  f';(. Correct answer was "{answer}"\n'
+                  f'Let\'s try again, {name}!'
             )
             break
         else:

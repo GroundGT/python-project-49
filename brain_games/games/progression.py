@@ -1,4 +1,4 @@
-from random import randint, choice
+import random
 
 START_GAP = 0
 END_GAP = 100
@@ -24,10 +24,9 @@ def get_progression() -> list[int]:
     - the size of the progression is randomly selected in the range from
     MIN_SIZE to MAX_SIZE.
     """
-    first_element = randint(START_GAP, END_GAP)
-    step = randint(START_GAP, END_GAP)
-    size_progression = randint(MIN_SIZE, MAX_SIZE)
-
+    first_element = random.randint(START_GAP, END_GAP)
+    step = random.randint(START_GAP, END_GAP)
+    size_progression = random.randint(MIN_SIZE, MAX_SIZE)
 
     return [first_element + step * i for i in range(size_progression)]
 
@@ -45,7 +44,7 @@ def get_game_objects() -> tuple[str, str]:
     that was replaced.
     """
     progression = get_progression()
-    answer = str(choice(progression))
+    answer = str(random.choice(progression))
     question = (" ".join(map(str, progression)))
 
     return question.replace(answer, '..'), answer

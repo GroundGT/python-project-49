@@ -10,6 +10,7 @@ OPERATORS = {
     '*': mul
 }
 
+
 def get_game_objects() -> tuple[str, str]:
     """Generates an arithmetic expression and its result.
 
@@ -26,7 +27,6 @@ def get_game_objects() -> tuple[str, str]:
     """
     first_number = randint(START_GAP, END_GAP)
     second_number = randint(START_GAP, END_GAP)
-
 
     action = choice(list(OPERATORS.keys()))
     question = f'{first_number} {action} {second_number}'

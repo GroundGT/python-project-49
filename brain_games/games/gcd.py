@@ -4,6 +4,7 @@ START_GAP = 1
 END_GAP = 50
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
+
 def generate_random_numbers() -> tuple[int, int]:
     """Generates two random numbers within the specified range.
 
@@ -13,6 +14,7 @@ def generate_random_numbers() -> tuple[int, int]:
     first_number = randint(START_GAP, END_GAP)
     second_number = randint(START_GAP, END_GAP)
     return first_number, second_number
+
 
 def calculate_gcd(a: int, b: int) -> int:
     """Calculates the greatest common divisor (GCD) of two numbers
@@ -29,8 +31,10 @@ def calculate_gcd(a: int, b: int) -> int:
         a, b = b, a % b
     return a
 
+
 def get_game_objects() -> tuple[str, str]:
-    """Generates two random numbers and finds their greatest common divisor (GCD).
+    """Generates two random numbers and finds their greatest common
+    divisor (GCD).
 
     Returns:
         tuple[str, str]: A tuple of two elements:
