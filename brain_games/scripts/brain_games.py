@@ -3,7 +3,8 @@ from brain_games.cli import welcome_user
 
 
 def main():
-
+    """This function just an example and it welcomes a user
+    """
     welcome_user()
 
 
