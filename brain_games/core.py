@@ -19,10 +19,12 @@ def launch_game(game):
 
     print('Welcome to the Brain games')
     name = prompt.string('May I have your name? ')
-    print(f'''Hello, {name}
-    {game.DESCRIPTION}'''
+    print(
+          f'Hello, {name}\n'
+          f'{game.DESCRIPTION}'
     )
 
+    answer_check = True
     for _ in range(ROUNDS):
         question, answer = game.get_game_objects()
         print(f'Question: {question}')
@@ -34,8 +36,10 @@ def launch_game(game):
                   f';(. Correct answer was "{answer}"\n'
                   f'Let\'s try again, {name}!'
             )
+            answer_check = False
             break
-        else:
-            print('Correct!')
-    else:
+
+        print('Correct!')
+
+    if answer_check:
         print(f'Congratulations, {name}!')
