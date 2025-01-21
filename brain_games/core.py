@@ -9,9 +9,9 @@ def launch_game(game):
     get_game_objects().
 
     Parameters:
-        game: A game object that should contain the get_game_objects() method that
-    generates questions and answers and also, constants : DESCRIPTION and
-    a number of ROUNDS
+        game: A game object that should contain the get_game_objects() method
+        that generates questions and answers and also, constants :
+        DESCRIPTION and a number of ROUNDS
 
     Returns:
         str objects that contain the results of user`s answers
