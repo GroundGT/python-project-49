@@ -4,8 +4,6 @@ START_GAP = 1
 END_GAP = 100
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-random_number = randint(START_GAP, END_GAP)
-
 
 def is_prime() -> tuple[int, bool]:
     """Generates random number and checks it`s prime status'
