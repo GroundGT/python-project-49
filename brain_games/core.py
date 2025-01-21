@@ -6,10 +6,10 @@ ROUNDS = 3
 def launch_game(game):
     """Base function of the project. Its starts the game, greets the player,
     asks questions and checks the answers with the help of result of function
-    get_gameinfo().
+    get_game_objects().
 
     Parameters:
-        game: A game object that should contain the get_gameinfo() method that
+        game: A game object that should contain the get_game_objects() method that
     generates questions and answers and also, constants : DESCRIPTION and
     a number of ROUNDS
 
