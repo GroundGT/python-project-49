@@ -9,20 +9,12 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 
 def get_progression() -> list[int]:
-    """Generates an arithmetic progression.
-
-    The function randomly selects the first element of the progression,
-    the step of the progression and its size,and then returns a list
-    containing the elements of this progression.
+    """Generates an arithmetic progression. The function randomly
+    selects the first element of the progression, the step of the
+    progression and its size.
 
     Returns:
         list[int]: A list containing the elements of the arithmetic progression.
-
-    Note:
-    - the first element of the progression and the step are randomly generated
-    in the range from START_GAP to END_GAP.
-    - the size of the progression is randomly selected in the range from
-    MIN_SIZE to MAX_SIZE.
     """
     first_element = random.randint(START_GAP, END_GAP)
     step = random.randint(START_GAP, END_GAP)
@@ -45,6 +37,6 @@ def get_game_objects() -> tuple[str, str]:
     """
     progression = get_progression()
     answer = str(random.choice(progression))
-    question = (" ".join(map(str, progression)))
+    question = (" ".join(map(str, progression))).replace(answer, '..')
 
-    return question.replace(answer, '..'), answer
+    return question, answer
