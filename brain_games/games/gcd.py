@@ -29,8 +29,8 @@ def get_game_objects() -> tuple[str, str]:
 
     Returns:
         tuple[str, str]: A tuple of two elements:
-        - a string with two numbers separated by a space
-        - a string with their largest common divisor
+    - a string with two numbers separated by a space
+    - a string with their largest common divisor
     """
     first_number = randint(START_GAP, END_GAP)
     second_number = randint(START_GAP, END_GAP)

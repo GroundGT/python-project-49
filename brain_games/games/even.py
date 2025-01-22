@@ -5,7 +5,7 @@ END_GAP = 100
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(number:int) -> bool:
+def is_even(number: int) -> bool:
     """ Determines number`s parity.
 
     Returns:

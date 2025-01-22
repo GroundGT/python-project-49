@@ -25,8 +25,8 @@ def get_game_objects() -> tuple[str, str]:
 
     Returns:
         tuple[str, str]: A tuple with 2 strings:
-        - a question number
-        - the answer.
+    - a question number
+    - the answer.
     """
     number = randint(START_GAP, END_GAP)
     question = str(number)
