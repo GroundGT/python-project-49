@@ -27,6 +27,6 @@ def get_game_objects() -> tuple[str, str]:
 
     action = choice(list(OPERATORS.keys()))
     question = f'{first_number} {action} {second_number}'
-    answer = OPERATORS[action](first_number, second_number)
+    answer = str(OPERATORS[action](first_number, second_number))
 
-    return question, str(answer)
+    return question, answer

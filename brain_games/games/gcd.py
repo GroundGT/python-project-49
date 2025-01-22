@@ -36,4 +36,4 @@ def get_game_objects() -> tuple[str, str]:
     second_number = randint(START_GAP, END_GAP)
     question = f'{first_number} {second_number}'
     answer = str(calculate_gcd(first_number, second_number))
-    return question, str(answer)
+    return question, answer
