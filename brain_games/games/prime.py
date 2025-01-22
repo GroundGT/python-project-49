@@ -5,26 +5,30 @@ END_GAP = 100
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime() -> tuple[int, bool]:
-    """Generates random number and checks it`s prime status'
-
+def is_prime(number: int) -> bool:
+    """Checks number`s prime status'
+    Args:
+        number[int]: A number to check
     Returns:
-        tuple[int, bool]: A tuple of two elements: A number and it`s bool
-    prime check
+        bool: Number`s prime status
     """
-    random_number = randint(START_GAP, END_GAP)
 
-    for i in range(2, int(random_number ** 0.5) + 1):
-        if random_number % i == 0:
-            return random_number, False
-    return random_number, True
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
 
 
 def get_game_objects() -> tuple[str, str]:
-    """This function get the result of function is_prime() in it`s body
+    """This function randomizes a number, checks it`s prime status
+    by the result of function is_prime() in it`s body
 
     Returns:
-        tuple[str, str]: A tuple with the question number and answer.
+        tuple[str, str]: A tuple with 2 strings:
+        - a question number
+        - the answer.
     """
-    question, answer = is_prime()
-    return str(question), 'yes' if answer else 'no'
+    number = randint(START_GAP, END_GAP)
+    question = str(number)
+    answer = 'yes' if is_prime(number) else 'no'
+    return question, answer
