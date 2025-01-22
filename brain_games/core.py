@@ -9,7 +9,8 @@ def launch_game(game) -> None:
     get_game_objects().
 
     Args:
-        function get_game_objects(), which is situated at game`s module
+        In this project, function get_game_objects(), which is situated at
+    game`s module
     Returns:
         None
     """
