@@ -3,18 +3,13 @@ import prompt
 ROUNDS = 3
 
 
-def launch_game(game):
+def launch_game(game) -> None:
     """Base function of the project. Its starts the game, greets the player,
     asks questions and checks the answers with the help of result of function
     get_game_objects().
 
-    Parameters:
-        game: A game object that should contain the get_game_objects() method
-        that generates questions and answers and also, constants :
-        DESCRIPTION and a number of ROUNDS
-
     Returns:
-        str objects that contain the results of user`s answers
+        None
     """
 
     print('Welcome to the Brain games')
@@ -24,7 +19,6 @@ def launch_game(game):
           f'{game.DESCRIPTION}'
     )
 
-    answer_check = True
     for _ in range(ROUNDS):
         question, answer = game.get_game_objects()
         print(f'Question: {question}')
@@ -36,10 +30,8 @@ def launch_game(game):
                   f';(. Correct answer was "{answer}"\n'
                   f'Let\'s try again, {name}!'
             )
-            answer_check = False
-            break
+            return
 
         print('Correct!')
 
-    if answer_check:
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
