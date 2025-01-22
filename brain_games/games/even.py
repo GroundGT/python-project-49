@@ -5,15 +5,13 @@ END_GAP = 100
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even() -> tuple[int, bool]:
-    """ Generates a random number and determines its parity.
+def is_even(number:int) -> bool:
+    """ Determines number`s parity.
 
     Returns:
-        tuple[int, str]: A tuple of two elements: A number and it`s bool
-    parity check
+        bool: A number bool parity check
     """
-    number = randint(START_GAP, END_GAP)
-    return number, number % 2 == 0
+    return number % 2 == 0
 
 
 def get_game_objects() -> tuple[str, str]:
@@ -25,5 +23,7 @@ def get_game_objects() -> tuple[str, str]:
     - a string as a question
     - a string with the answer ('yes' if the number is even, 'no' if odd)
     """
-    number, check = is_even()
-    return str(number), 'yes' if check else 'no'
+    number = randint(START_GAP, END_GAP)
+    question = str(number)
+    answer = 'yes' if is_even(number) else 'no'
+    return question, answer
