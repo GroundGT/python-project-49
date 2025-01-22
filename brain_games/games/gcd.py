@@ -28,7 +28,7 @@ def get_game_objects() -> tuple[str, str]:
     divisor (GCD).
 
     Returns:
-        tuple[str, str]: A tuple of two elements:
+        tuple[question: str, answer: str]: A tuple of two elements:
     - a string with two numbers separated by a space
     - a string with their largest common divisor
     """

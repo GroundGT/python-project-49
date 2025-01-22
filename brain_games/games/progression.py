@@ -29,7 +29,7 @@ def get_game_objects() -> tuple[str, str]:
     string of the question, replacing this element with '..'.
 
     Returns:
-         tuple[str, str]: A tuple containing a question string and an
+         tuple[question: str, answer: str]: A tuple containing a question string and an
     answer string:
     - the question is a progression with the replacement of one element by '..'.
     - the answer is a string representation of the element of the progression

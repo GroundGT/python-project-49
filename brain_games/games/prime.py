@@ -24,7 +24,7 @@ def get_game_objects() -> tuple[str, str]:
     by the result of function is_prime() in it`s body
 
     Returns:
-        tuple[str, str]: A tuple with 2 strings:
+        tuple[question: str, answer: str]: A tuple with 2 strings:
     - a question number
     - the answer.
     """

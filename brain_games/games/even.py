@@ -19,7 +19,7 @@ def get_game_objects() -> tuple[str, str]:
     and answer for player
 
     Returns:
-        tuple[str, str]: A tuple of two elements:
+        tuple[question: str, answer: str]: A tuple of two elements:
     - a string as a question
     - a string with the answer ('yes' if the number is even, 'no' if odd)
     """
