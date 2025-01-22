@@ -7,7 +7,7 @@ DESCRIPTION = 'What is the result of the expression?'
 OPERATORS = {
     '+': add,
     '-': sub,
-    '*': mul
+    '*': mul,
 }
 
 
@@ -21,9 +21,6 @@ def get_game_objects() -> tuple[str, str]:
         tuple[str, str]: A tuple of two elements:
     - a string with an arithmetic expression
     - a string with an answer (the result of calculating the expression)
-
-    Note:
-        Supported operators: addition (+), subtraction (-), multiplication (*).
     """
     first_number = randint(START_GAP, END_GAP)
     second_number = randint(START_GAP, END_GAP)

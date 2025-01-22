@@ -8,6 +8,8 @@ def launch_game(game) -> None:
     asks questions and checks the answers with the help of result of function
     get_game_objects().
 
+    Args:
+        function get_game_objects(), which is situated at game`s module
     Returns:
         None
     """
