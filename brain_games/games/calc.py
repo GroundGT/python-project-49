@@ -18,6 +18,7 @@ def get_game_objects() -> tuple[str, str]:
     and one operator (+, - or *), and also calculates its result.
 
     Returns:
+
         tuple[question: str, answer: str]: A tuple of two elements:
     - a string with an arithmetic expression
     - a string with an answer (the result of calculating the expression)
