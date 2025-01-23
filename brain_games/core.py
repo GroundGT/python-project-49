@@ -40,6 +40,7 @@ def launch_game(game: ModuleType) -> None:
                   f';(. Correct answer was "{answer}"\n'
                   f'Let\'s try again, {name}!'
             )
+
             return
 
         print('Correct!')
