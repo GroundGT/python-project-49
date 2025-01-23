@@ -7,9 +7,13 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number: int) -> bool:
     """Checks number`s prime status'
+
     Args:
+
         number[int]: A number to check
+
     Returns:
+
         bool: Number`s prime status
     """
 
@@ -24,11 +28,12 @@ def get_game_objects() -> tuple[str, str]:
     by the result of function is_prime() in it`s body
 
     Returns:
-        tuple[question: str, answer: str]: A tuple with 2 strings:
+
+        tuple[str, str]: A tuple with 2 strings:
     - a question number
     - the answer.
     """
     number = randint(START_GAP, END_GAP)
-    question = str(number)
     answer = 'yes' if is_prime(number) else 'no'
-    return question, answer
+
+    return str(number), answer
