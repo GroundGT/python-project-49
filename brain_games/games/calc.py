@@ -14,9 +14,6 @@ OPERATORS = {
 def get_game_objects() -> tuple[str, str]:
     """Generates an arithmetic expression and its result.
 
-    The function creates a random arithmetic expression with two numbers
-    and one operator (+, - or *), and also calculates its result.
-
     Returns:
 
         tuple[str, str]: A tuple of two elements:
