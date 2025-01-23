@@ -19,9 +19,10 @@ def calculate_gcd(first_number: int, second_number: int) -> int:
         int: The greatest common divisor of the two numbers.
     """
     while second_number != 0:
-        first_number, second_number = (second_number, first_number %
-                                       second_number
-                                       )
+        first_number, second_number = (
+            second_number,
+            first_number % second_number
+        )
 
     return first_number
 
