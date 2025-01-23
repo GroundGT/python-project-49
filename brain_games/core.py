@@ -1,18 +1,25 @@
+from types import ModuleType
+
 import prompt
 
 ROUNDS = 3
 
 
-def launch_game(game) -> None:
+def launch_game(game: ModuleType) -> None:
     """Base function of the project. Its starts the game, greets the player,
     asks questions and checks the answers with the help of result of function
     get_game_objects().
 
     Args:
+
+        game (ModuleType): Module of a game, which must contain the function
         In this project, function get_game_objects(), which is situated at
     game`s module
+
     Returns:
-        None
+
+        None: this function returns nothing, but output a result of game
+    to the screen
     """
 
     print('Welcome to the Brain games')
