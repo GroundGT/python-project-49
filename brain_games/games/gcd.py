@@ -10,16 +10,20 @@ def calculate_gcd(first_number: int, second_number: int) -> int:
     using the Euclidean algorithm.
 
     Args:
+
         first_number (int): The first number to check
         second_number (int): The second number to check
 
     Returns:
+
         result[int]: The greatest common divisor of the two numbers.
     """
     while second_number != 0:
-        first_number, second_number = (second_number, first_number
-                                       % second_number)
+        first_number, second_number = (second_number, first_number %
+                                       second_number
+        )
     result = first_number
+
     return result
 
 
@@ -28,7 +32,8 @@ def get_game_objects() -> tuple[str, str]:
     divisor (GCD).
 
     Returns:
-        tuple[question: str, answer: str]: A tuple of two elements:
+
+        tuple[str, str]: A tuple of two elements:
     - a string with two numbers separated by a space
     - a string with their largest common divisor
     """
