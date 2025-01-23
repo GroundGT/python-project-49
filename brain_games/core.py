@@ -12,8 +12,8 @@ def launch_game(game: ModuleType) -> None:
 
     Args:
 
-        game (ModuleType): Module of a game, which must contain the function
-        In this project, function get_game_objects(), which is situated at
+        game (ModuleType): Module of a game, which must contain the function.
+    In this project, function get_game_objects(), which is situated at
     game`s module
 
     Returns:
