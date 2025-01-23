@@ -16,15 +16,14 @@ def calculate_gcd(first_number: int, second_number: int) -> int:
 
     Returns:
 
-        result[int]: The greatest common divisor of the two numbers.
+        int: The greatest common divisor of the two numbers.
     """
     while second_number != 0:
         first_number, second_number = (second_number, first_number %
                                        second_number
         )
-    result = first_number
 
-    return result
+    return first_number
 
 
 def get_game_objects() -> tuple[str, str]:
@@ -41,4 +40,5 @@ def get_game_objects() -> tuple[str, str]:
     second_number = randint(START_GAP, END_GAP)
     question = f'{first_number} {second_number}'
     answer = str(calculate_gcd(first_number, second_number))
+
     return question, answer
